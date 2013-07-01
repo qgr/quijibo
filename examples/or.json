@@ -1,0 +1,25 @@
+{
+  select: {
+   cols: [
+    'name',
+    'cost'
+   ],
+   from: 'projects',
+   where: {
+    or: [
+      {
+       eq: [
+       'start_year',
+       1977
+       ]
+      },
+      {
+       eq: [
+       'start_year',
+       1966
+       ]
+      }
+    ]
+   }
+  }
+}
